@@ -1,6 +1,8 @@
-# Sui MCP Server
+# Sui Agent MCP
 
 MCP (Model Context Protocol) server that provides Sui blockchain tools for Claude Code.
+
+[![npm version](https://badge.fury.io/js/sui-agent-mcp.svg)](https://www.npmjs.com/package/sui-agent-mcp)
 
 ## Features
 
@@ -47,15 +49,15 @@ MCP (Model Context Protocol) server that provides Sui blockchain tools for Claud
 ### Add to Claude Code
 
 ```bash
-# Option 1: Run directly from GitHub (recommended)
-claude mcp add sui -- npx -y sui-mcp
+# Option 1: Install from npm (recommended)
+claude mcp add sui -- npx -y sui-agent-mcp
 
 # Option 2: Clone and run locally
 git clone https://github.com/EasonC13-agent/sui-mcp.git
 cd sui-mcp
 npm install
 npm run build
-claude mcp add sui -- node /path/to/sui-mcp/dist/index.js
+claude mcp add sui -- node $(pwd)/dist/index.js
 ```
 
 ### Verify Installation
