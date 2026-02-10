@@ -4,7 +4,7 @@
   "description": "Sui blockchain MCP server for Claude Code - wallet control, Move development, and on-chain interaction",
   "main": "dist/index.js",
   "bin": {
-    "sui-mcp": "./dist/index.js"
+    "sui-mcp": "dist/index.js"
   },
   "type": "module",
   "scripts": {
